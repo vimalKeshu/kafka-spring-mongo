@@ -1,0 +1,22 @@
+kafka:
+  bootstrap-servers: localhost:9092
+  group: activity
+  activity-topic: activity
+  error-topic: activity-error
+  confirmation-topic: activity-success
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: activity
+      repositories:
+        enabled: true
+
+#logging
+logging:
+  level:
+    org:
+      springframework:
+        data: debug
